@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.29 135.9">
+  <defs>
+    <style>
+      .a {
+        fill: #89AFA6;
+        stroke: #89AFA6;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .b {
+        fill: #FFFFFF;
+      }
+    </style>
+  </defs>
+  <title>tick</title>
+  <path class="a" d="M33.91,133.84l-30.57-53a12,12,0,0,1,0-12l30.57-53a12,12,0,0,1,10.39-6h61.14a12,12,0,0,1,10.39,6l30.57,53a12,12,0,0,1,0,12l-30.57,53a12,12,0,0,1-10.39,6H44.3A12,12,0,0,1,33.91,133.84Z" transform="translate(1.27 -6.94)"/>
+  <path class="b" d="M59.87,107.82L30.06,78a3,3,0,0,1,0-4.24l4.24-4.24a3,3,0,0,1,4.24,0L62,93l47.59-47.59a3,3,0,0,1,4.24,0l4.24,4.24a3,3,0,0,1,0,4.24l-54,54A3,3,0,0,1,59.87,107.82Z" transform="translate(1.27 -6.94)"/>
+</svg>

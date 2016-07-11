@@ -1,0 +1,41 @@
+.highlights {
+  overflow: hidden;
+  color: #3B3415;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0 2em;
+}
+
+.highlights li {
+  padding: 0.5em 0;
+  padding-left: 4em;
+  transition: opacity 0.25s linear;
+}
+
+.highlights li::before {
+  content: "";
+  float: left;
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: -4em;
+  background: url("images/tick.svg") no-repeat center;
+  transition: background 0.25s linear;
+}
+
+.highlights:hover li {
+  opacity: 0.5;
+}
+
+@media screen {
+
+  .highlights li:hover::before {
+    background-image: url("images/tick-hover.svg");
+  }
+
+  .highlights li:hover {
+    opacity: 1;
+  }
+
+}

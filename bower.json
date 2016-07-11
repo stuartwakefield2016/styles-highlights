@@ -17,5 +17,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "stuartwakefield2016-styles-base": "~0.1.0"
+  }
 }
