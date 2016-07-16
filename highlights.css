@@ -11,6 +11,7 @@
 .highlights li {
   padding: 0.5em 0;
   padding-left: 4em;
+  min-height: 4em;
   position: relative;
 }
 
