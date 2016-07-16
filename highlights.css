@@ -11,27 +11,53 @@
 .highlights li {
   padding: 0.5em 0;
   padding-left: 4em;
-  transition: opacity 0.25s linear;
+  position: relative;
+}
+
+.highlights li::before,
+.highlights li::after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  width: 2.5em;
+  height: 2.5em;
+  background: url("images/tick.svg") no-repeat;
 }
 
 .highlights li::before {
-  content: "";
-  float: left;
-  width: 2.5em;
-  height: 2.5em;
-  margin-left: -4em;
-  background: url("images/tick.svg") no-repeat center;
-  transition: background 0.25s linear;
+  background-size: 100%;
+  background-position: top;
+  opacity: 1;
 }
 
-.highlights:hover li {
-  opacity: 0.5;
+.highlights li::after {
+  background-size: 100%;
+  background-position: bottom;
+  opacity: 0;
 }
 
 @media screen {
 
+  .highlights li {
+    transition: opacity 0.25s linear;
+  }
+
+  .highlights li::before,
+  .highlights li::after {
+    transition: opacity 0.25s linear;
+  }
+
+  .highlights:hover li {
+    opacity: 0.5;
+  }
+
   .highlights li:hover::before {
-    background-image: url("images/tick-hover.svg");
+    opacity: 0;
+  }
+
+  .highlights li:hover::after {
+    opacity: 1;
   }
 
   .highlights li:hover {
